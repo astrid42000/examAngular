@@ -1,0 +1,27 @@
+.inventaire{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.btn{
+  background-color: lightseagreen;
+  color:whitesmoke;
+  font-weight: bold;
+}
+
+.calcul{
+  background-color: lightgreen;
+  color:whitesmoke;
+  font-weight: bolder;
+  border-color: lightgreen;
+}
+
+.card-body h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.card-body span{
+  text-decoration: underline;
+  font-weight: bolder;
+}

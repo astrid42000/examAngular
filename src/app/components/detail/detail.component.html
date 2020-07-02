@@ -1,0 +1,17 @@
+<h1>Présentation Ordinateur</h1>
+
+<div>
+  <div class="card mx-auto" style="width: 100rem;">
+    <div class="card-body">
+      <h2>{{ordi.modele}}</h2>
+      <h3>{{ordi.marque}}</h3>
+      <p><span>categorie:</span> {{ordi.category}}</p>
+      <p><span>type:</span> {{ordi.type}}</p>
+      <p><span>prix de vente: </span>{{ordi.prixVente}} euros</p>
+    </div>
+    <button type="button" class="btn  h-25" [routerLink]="['/edit/update', ordi.id]">Modifier</button>
+    <button type="button" class="btn  h-25" (click)="delete(ordi.id)" routerLink="'/liste'">Supprimer</button>
+    <p>{{ordi.dateEntreStock}}</p>
+  </div>
+
+</div>

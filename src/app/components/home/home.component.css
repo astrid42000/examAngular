@@ -1,0 +1,15 @@
+.couleur{
+  background-color: lightseagreen;
+  color:whitesmoke;
+  font-weight: bolder;
+  display:flex;
+  justify-content: center;
+  vertical-align: center;
+  margin-right:auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  width:400px;
+  height:70px;
+  padding:auto;
+}

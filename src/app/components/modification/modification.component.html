@@ -1,0 +1,53 @@
+
+<div class="forms w-50 mx-auto my-auto ">
+  <h2>Modification d'une référence</h2><br>
+  <form #validationForm="ngForm" (ngSubmit)="update()">
+
+    <div class="form-group">
+      <label for="modele">modele</label>
+      <input type="text" id="modele" name="modele" class="form-control" required [(ngModel)]="ordi.modele" #modele='ngModel'></div>
+    <div class="attention" [hidden]="modele.valid">Entrer un modele</div><br>
+
+
+    <p class="titre">Marque</p>
+    <div >
+      <div *ngFor="let marque of mesMarques" class="form-check">
+        <input type="radio" class="form-check-input" id="marque" name="marque" >
+        <label class="marque form-check-label" for="marque">{{marque.nom}}</label>
+
+      </div>
+    </div><br>
+
+
+    <label for="type">Type</label>
+    <select  class="form-control" id="type" name="type" [(ngModel)]="ordi.type" #modele='ngModel'>
+      <option selected>types</option>
+      <option *ngFor="let type of myTypes" >{{type.nom}}</option>
+    </select><br>
+
+    <p class="titre">Categorie</p>
+    <div >
+      <div *ngFor="let categorie of mesCategories" class="form-check">
+        <input type="radio" class="form-check-input" id="marque" name="marque" >
+        <label class="marque form-check-label" for="marque">{{categorie.nom}}</label>
+      </div>
+    </div><br>
+
+    <div class="form-group">
+      <label for="prixA">Prix d'achat</label>
+      <input type="text" id="prixA" name="prixA" class="form-control" required [(ngModel)]="ordi.prixAchat" #prixA='ngModel'></div>
+    <div class="attention" [hidden]="modele.valid">Entrer un prix d'achat</div><br>
+
+    <div class="form-group">
+      <label for="prixV">Prix de vente</label>
+      <input type="text" id="prixV" name="prixV" class="form-control" required [(ngModel)]="ordi.prixVente" #prixV='ngModel'></div>
+    <div class="attention" [hidden]="modele.valid">Entrer un prix de vente</div><br>
+
+    <label for="date">Date d'ajout</label>
+    <input type="date" id="date" name="date" [(ngModel)]="ordi.dateEntreStock " #date='ngModel'><br><br>
+
+
+    <input class="valide" [disabled]="!validationForm.valid" type="submit"><br>
+
+  </form>
+</div>

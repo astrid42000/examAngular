@@ -1,0 +1,80 @@
+{
+  "ordinateur": [
+    {
+      "id": 1,
+      "modele": "Latitude 3500 - 15.6",
+      "marque": "Dell",
+      "type": "fixe",
+      "category": "Bureautique",
+      "prixAchat": 120.88,
+      "prixVente": 300.1,
+      "dateEntreStock": " 2012-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 2,
+      "modele": "XXXXX-5555",
+      "marque": null,
+      "type": "fixe",
+      "category": null,
+      "prixAchat": "780",
+      "prixVente": "900",
+      "dateEntreStock": null
+    },
+    {
+      "id": 3,
+      "modele": "WWWWWW-9999",
+      "marque": null,
+      "type": "tablette hybride",
+      "category": null,
+      "prixAchat": "1200",
+      "prixVente": "1500",
+      "dateEntreStock": null
+    }
+  ],
+  "type": [
+    {
+      "id": 1,
+      "nom": "portable"
+    },
+    {
+      "id": 2,
+      "nom": "fixe"
+    },
+    {
+      "id": 3,
+      "nom": "tablette hybride"
+    }
+  ],
+  "marque": [
+    {
+      "id": 1,
+      "nom": "Apple"
+    },
+    {
+      "id": 2,
+      "nom": "Asus"
+    },
+    {
+      "id": 3,
+      "nom": "Dell"
+    },
+    {
+      "id": 4,
+      "nom": "HP"
+    }
+  ],
+  "categorie": [
+    {
+      "id": 1,
+      "nom": "gaming"
+    },
+    {
+      "id": 2,
+      "nom": "bureautique"
+    },
+    {
+      "id": 3,
+      "nom": "premier prix"
+    }
+  ]
+}

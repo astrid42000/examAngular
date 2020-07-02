@@ -1,0 +1,13 @@
+<p class="inventaire">Nombre d'articles en stock: {{mesOrdi.length}}</p>
+
+<div *ngFor="let ordi of mesOrdi" class="card mx-auto" style="width:70rem; margin-bottom: 20px; margin-top: 20px;">
+  <div class="card-body">
+    <h2>{{ordi.modele}}</h2>
+    <p class="card-text"><span>Marque:</span> {{ordi.marque}}</p>
+    <p><span>Prix de vente :</span> {{ordi.prixVente}} euros</p>
+    <button class="calcul" (click)="soustraire(ordi.prixVente, ordi.prixAchat);"> indice rentabilité </button>
+  </div>
+  <button type="button" class="btn h-25" [routerLink]="['/detail', ordi.id]">Voir plus</button>
+</div>
+
+
